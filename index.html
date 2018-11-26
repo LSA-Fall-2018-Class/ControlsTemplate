@@ -1,0 +1,71 @@
+<!DOCTYPE html>             <!-- Declare that this an HTML5 document. -->
+<html lang="en">            <!-- Declare the content language. -->
+<head>
+    <meta charset="utf-8">  <!-- Declare the document's character set. -->
+    <title>Controls Template</title>   <!-- Set the page title.  Will be displayed at the top of the browser window and in bookmarks.  -->
+    <link rel="stylesheet" href="index.css">    <!-- Include styles from index.css. -->
+</head>
+
+<!--  Start body -->
+
+  <body>
+    <title>Controls Template</title>
+    Hello Controls Template!
+    <br><br>
+
+    <!--  Message Label frequently updated -->
+    <div id = "message1">Message Board...</div>
+    <br>
+
+
+    <!--  Radio Button Section -->
+    <div id = "radioTestLabel">Here is your question: </div>
+    <form id="radioTest" action="">
+      <!-- List all your radio buttons here, same name.  onClick is optional -->
+      <input type="radio" name="mode" checked="checked" onclick="firstClicked()">
+      <span id="label0">Choice 0</span>  &nbsp
+      <input type="radio" name="mode" onclick="secondClicked()">
+      <span id="label1">Choice 1</span>  &nbsp
+      <input type="radio" name="mode" onclick="thirdClicked()">
+      <span id="label1">Choice 2</span><br>
+    </form>
+
+    <!--  Answer Button writes data to the console based on which radio button selected -->
+    <button id="answerButton">Answer</button>
+    <br><br>
+
+    <!--  Example input box with button below.  Hard-coded label -->
+    Input Box 1: <input type="text" id="inputBox1" value="3">  <br>
+    <button id="doubleButton">Double</button><br><br>
+
+    <!--  Example input box with button below.  Label not hard-coded.  -->
+    <div id = "inputBox2Label">Input Box 2: </div> <input type="text" id="inputBox2" value="Hello">  <br>
+    <button id="copyButton">Copy</button>
+    <br><br><br>
+
+    <!--  Example Graphic with button below  -->
+    <img id="exampleGraphic" src="Player345.jpg" height="180" width="150"><br>
+    <button id="changePicButton">Change Picture</button>
+    <br><br><br>
+
+    <!--  3 by 3 board of squares  -->
+    <div id = "board">
+      <div class = "square" id = "0"></div>
+      <div class = "square" id = "1"></div>
+      <div class = "square" id = "2"></div>
+      <div class = "square" id = "3"></div>
+      <div class = "square" id = "4"></div>
+      <div class = "square" id = "5"></div>
+      <div class = "square" id = "6"></div>
+      <div class = "square" id = "7"></div>
+      <div class = "square" id = "8"></div>
+    </div>
+
+    <!-- ***  Start aside section ****  -->
+    <aside>
+        Hello World!
+    </aside>
+    <script src="index.js"></script>    <!-- Include index.js as a JavaScript script file. -->
+  </body>
+
+</html>
